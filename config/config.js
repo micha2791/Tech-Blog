@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize');
+
 require('dotenv').config();
-const fs = require('fs')
-const path = require('path')
 
 let sequelize;
 
@@ -15,7 +14,7 @@ if (process.env.JAWSDB_URL) {
     });
 }
 
-// export the module
+
 module.exports = sequelize;
 
 

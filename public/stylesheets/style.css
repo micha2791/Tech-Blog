@@ -1,8 +1,8 @@
 :root {
     --primary: #ffffff;
-    --secondary: #777e40;
-    --tertiary: #c6d166;
-    --dark: #0f1b07;
+    --secondary: rgba(90, 92, 97, 0.905);
+    --tertiary: rgba(90, 92, 97, 0.905);
+    --dark: rgb(235, 95, 15);
     --border-radius: 0.2rem;
   }
   
@@ -26,7 +26,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Amita", cursive;
+    font-family: "Arial";
     font-weight: 700;
     margin: 0;
     color: var(--tertiary);

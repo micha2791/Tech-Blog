@@ -1,25 +1,21 @@
-const router = require('express').Router();
-const { User, Post, Comment } = require('../../models');
-const withAuth = require('../../utils/auth');
-
-// post all users
+const router = require("express").Router();
+const { Post, Comment, User } = require("../../models/");
+const withAuth = require("../../utils/auth");
 
 router.post("/", withAuth, (req, res) => {
     const body = req.body;
     console.log(req.session.userId);
     Post.create({ ...body, userId: req.session.userId })
         .then(newPost => {
-            res.json(newPost);
+        //    res.json(newPost);
+        res.render("all-posts",{newPost});
         })
         .catch(err => {
             res.status(500).json(err);
-        }
-        );
+        });
 });
 
-// router put 
-
-router.put('/:id', withAuth, (req, res) => {
+router.put("/:id", withAuth, (req, res) => {
     Post.update(req.body, {
         where: {
             id: req.params.id
@@ -34,13 +30,10 @@ router.put('/:id', withAuth, (req, res) => {
         })
         .catch(err => {
             res.status(500).json(err);
-        }
-        );
+        });
 });
-           
-// router delete
 
-router.delete('/:id', withAuth, (req, res) => {
+router.delete("/:id", withAuth, (req, res) => {
     Post.destroy({
         where: {
             id: req.params.id
@@ -55,12 +48,11 @@ router.delete('/:id', withAuth, (req, res) => {
         })
         .catch(err => {
             res.status(500).json(err);
-        }
-        );
-}
-);
+        });
+});
 
 module.exports = router;
+
 
 
 

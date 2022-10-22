@@ -1,5 +1,6 @@
 module.exports = {
-    secret: "This is a secret"
-}
+    secret: "THIS IS A SECRET"
+};
+
 
 
