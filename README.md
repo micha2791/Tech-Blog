@@ -1,15 +1,15 @@
 # Tech Blog
 
+### Github : <https://github.com/micha2791/Tech-Blog>
 
-### Github : https://github.com/micha2791/Tech-Blog
-
-### Heroku : 
+### Heroku
 
 ## Description
+
 A CMS-style blog application with the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
-
 ## User Story
+
 ```
 - AS A developer who writes about tech
 - I WANT a CMS-style blog site
@@ -17,6 +17,7 @@ A CMS-style blog application with the MVC paradigm in its architectural structur
 ```
 
 ## Usage
+
 - App shows user the existing blogs on homepage.
 - App allows user to sign up.
 - User have to sign in to be able create a post.
@@ -26,6 +27,7 @@ A CMS-style blog application with the MVC paradigm in its architectural structur
 - User is automatically signed out of the site when user is idle for some period of time
 
 ## Technologies Use
+
 <p><a href="https://nodejs.org/">Node.js</a></p>
 <p><a href="https://www.npmjs.com/package/express-handlebars">Express Handlebars</a></p>
 <p><a href="https://www.npmjs.com/package/dotenv">dotenv</a></p>
@@ -36,7 +38,7 @@ A CMS-style blog application with the MVC paradigm in its architectural structur
 <p><a href="https://www.npmjs.com/package/connect-session-sequelize">connect-session-sequalize</a></p>
 <p><a href="https://www.heroku.com/">Heroku</a></p>
 
+## Contributor
 
-## Contributor:
 Michael Correa ©2022 All Rights Reserved.
 - - -
